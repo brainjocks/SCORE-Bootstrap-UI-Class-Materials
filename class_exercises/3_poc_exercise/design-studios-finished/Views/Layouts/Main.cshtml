@@ -1,0 +1,52 @@
+﻿@using Score.Data.Const
+@model Score.Data.ViewModels.Base.ContentPage
+<!DOCTYPE html>
+<html lang="@Sitecore.Context.Language.ToString()">
+<head>
+    <meta charset="utf-8">
+    @Html.Sitecore().Rendering(ScoreConst.RenderingIds.PageMetaData, new { Cacheable = true, Cache_VaryByData = true })
+    @Html.Sitecore().Rendering(ScoreConst.RenderingIds.PageHeaderScripts, new { Cacheable = true, Cache_VaryByData = true })
+    @Html.Sitecore().Rendering(ScoreConst.RenderingIds.SiteHeaderScripts, new { Cacheable = true })
+
+    <!-- Bootstrap core CSS -->
+    <link href="@Url.Content("~/Areas/RenameMeArea/css/main.css")" rel="stylesheet" />
+    @if (Sitecore.Context.PageMode.IsPageEditorEditing)
+    {
+        <link href="@Url.Content("~/Areas/ScoreBootstrapUI/css/bootstrapui_page_editor.css")" rel="stylesheet" />
+        <link href="@Url.Content("~/Areas/RenameMeArea/css/page_editor.css")" rel="stylesheet" />
+    }
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    @Html.Sitecore().Placeholder("Above Page Content")
+    <div class="pageWrapper">
+        @Html.Sitecore().Placeholder("Page Content")
+    </div>
+    @Html.Sitecore().Placeholder("Below Page Content")
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+
+    @if (!Sitecore.Context.PageMode.IsPageEditorEditing)
+    {
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.12.0/jquery.validate.min.js"></script>
+        <script src="@Url.Content("~/Areas/RenameMeArea/js/jquery.unobtrusive-ajax.min.js")"></script>
+        <script src="@Url.Content("~/Areas/RenameMeArea/js/jquery.validate.unobtrusive.min.js")"></script>
+        <script src="@Url.Content("~/Areas/Score/js/score.jquery.validate.unobtrusive.js")"></script>
+        <script src="@Url.Content("~/Areas/RenameMeArea/js/bootstrap.min.js")"></script>
+        <script src="@Url.Content("~/Areas/ScoreBootstrapUI/js/BootstrapUI.js")"></script>
+        <script src="@Url.Content("~/Areas/RenameMeArea/js/Rename.Me.js")"></script>
+    }
+
+    @Html.Sitecore().Rendering(ScoreConst.RenderingIds.PageFooterScripts, new { Cacheable = true, Cache_VaryByData = true })
+    @Html.Sitecore().Rendering(ScoreConst.RenderingIds.SiteFooterScripts, new { Cacheable = true })
+
+</body>
+</html>

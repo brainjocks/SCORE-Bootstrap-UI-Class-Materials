@@ -1,0 +1,60 @@
+//SCORE specific styles
+
+.pageWrapper {
+    width: 100%;
+}
+
+//default margin on content components
+.score-component {
+    margin-bottom: @vertical-spacing;
+}
+.score-stripe {
+    width: 100%;
+    padding-top: @vertical-spacing;
+    border-radius:0;
+    &.stripe-option1 {
+        text-align: center;
+        border-top: 10px solid #808080;
+        border-bottom: 10px solid #808080;
+        .score-section-header {
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            h2 {
+                font-size: 40px;
+                margin: 0;
+            }
+        }
+    }
+    &.stripe-option2 {
+        box-shadow: 0 1px 10px #333;
+        .transition(all 2s ease);
+        @media only screen and (min-width: 0) {
+            background-size: cover;
+            background-repeat: no-repeat;
+            &:hover {
+                background-size: cover;
+            }
+        }
+        @media only screen and (min-width: 992px) {
+            //animates background image on hover
+            background-size: 100%;
+            background-repeat: no-repeat;
+            &:hover {
+                background-size: 110%;
+            }
+        }
+    }
+}
+.score-container {
+    &.full-width {
+        .container {
+            width: 100%;
+            padding: 0;
+        }
+    }
+}
+
+//turn into bootstrap container
+.score-header-wrapper, .score-footer-wrapper, .score-carouselpane-body {
+    .container;
+}

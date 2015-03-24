@@ -1,0 +1,87 @@
+//declare this in site-variables.less (shown here as an example)
+@grid-columns: 16;
+
+.score-page {
+	.make-row();
+	&.score-column1 {
+		& > .score-main {
+			.make-md-column(@grid-columns);
+		}	
+	}
+	&.score-column2-equal {
+		& > .score-side {
+			// (12/6 = 2) 
+			.make-md-column(@grid-columns/2);
+		}
+		& > .score-side2 {
+			// (12/6 = 2)
+			.make-md-column(@grid-columns/2);
+		}
+	}
+	&.score-column2-largeleft {
+		& > .score-main {
+			// (12/8 = 1.5)
+			.make-md-column(@grid-columns/1.5);
+		}
+		& > .score-side {
+			// (12/4 = 3)
+			.make-md-column(@grid-columns/3);
+		}
+	}
+	&.score-column2-largeright {
+		& > .score-side {
+			// (12/4 = 3)
+			.make-md-column(@grid-columns/3);
+		}
+		& > .score-main {
+			// (12/8 = 1.5)
+			.make-md-column(@grid-columns/1.5);
+		}
+	}
+	&.score-column3-equal {
+		& > .score-side {
+			// (12/4 = 3)
+			.make-md-column(@grid-columns/3);
+		}
+		& > .score-main {
+			// (12/4 = 3)
+			.make-md-column(@grid-columns/3);
+		}
+		& > .score-side2 {
+			// (12/4 = 3)
+			.make-md-column(@grid-columns/3);
+		}
+	}
+	&.score-column3-largemiddle {
+		& > .score-side {
+			// (12/3 = 4)
+			.make-md-column(@grid-columns/4);
+		}
+		& > .score-main {
+			// (12/6 = 2)
+			.make-md-column(@grid-columns/2);
+		}
+		& > .score-side2 {
+			// (12/3 = 4)
+			.make-md-column(@grid-columns/4);
+		}
+	}
+	&.score-column4-equal {
+		& > .score-side {
+			// (12/3 = 4)
+			.make-md-column(@grid-columns/4);
+		}
+		& > .score-main {
+			// (12/3 = 4)
+			.make-md-column(@grid-columns/4);
+		}
+		& > .score-main2 {
+			// (12/3 = 4)
+			.make-md-column(@grid-columns/4);
+		}
+		& > .score-side2 {
+			// (12/3 = 4)
+			.make-md-column(@grid-columns/4);
+		}
+	}
+}

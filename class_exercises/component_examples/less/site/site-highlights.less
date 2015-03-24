@@ -1,0 +1,77 @@
+﻿.score-highlight {
+	position: relative;
+	background: rgba(255, 255, 255, 0.95);
+	text-align: center;
+	border: 1px solid #aaa;
+	padding: 20px 20px 60px 20px;
+	img {
+		width: 150px;
+		height: auto;
+	}
+	.score-highlight-header {
+		color: rgba(255, 0, 0, 0.6);
+		h2 {
+			font-size: 22px;
+		}
+	}
+	.caption {
+		padding: 0;
+	}
+	.score-highlight-body {
+		font-size: 18px;
+		color: #808080;
+	}
+	.score-highlight-button-wrapper {
+		position: absolute;
+		bottom: 20px;
+		left: 0;
+		width: 100%;
+	}
+	.btn {
+		font-size: 18px;
+		text-transform: uppercase;
+		margin: 0 20px;
+	}
+
+	&.highlight-option1 {
+		background: #eee;
+		text-align: left;
+		border: 1px solid #ff0000;
+		box-shadow: 3px 3px 3px #999;
+		.score-highlight-header {
+			color: #333;
+			h2 {
+				font-size: 24px;
+			}
+		}
+		.btn {
+			background: rgba(255, 0, 0, 0.6);
+			color: #fff;
+		}
+	}
+
+	&.highlight-option2 {
+		background: transparent;
+		text-align: left;
+		border: none;
+		padding: 20px 0;
+		overflow: hidden;
+		img {
+			float: left;
+			width: 20%;
+			margin: 0 5% 20px 0;
+		}
+		.score-highlight-header, .caption {
+			float: left;
+			width: 75%;
+		}
+		.score-highlight-button-wrapper {
+			position: inherit;
+		}
+		.btn {
+			font-size: 18px;
+			text-transform: capitalize;
+			margin: 0;
+		}	
+	}
+}

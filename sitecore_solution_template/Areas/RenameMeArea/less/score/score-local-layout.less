@@ -1,0 +1,28 @@
+//SCORE specific styles
+
+.pageWrapper {
+    width: 100%;
+}
+
+//default margin on content components
+.score-component {
+    margin-bottom: @vertical-spacing;
+}
+.score-stripe {
+    width: 100%;
+    padding-top: @vertical-spacing;
+    border-radius:0;
+}
+.score-container {
+    &.full-width {
+        .container {
+            width: 100%;
+            padding: 0;
+        }
+    }
+}
+
+//turn into bootstrap container
+.score-header-wrapper, .score-footer-wrapper, .score-carouselpane-body {
+    .container;
+}
