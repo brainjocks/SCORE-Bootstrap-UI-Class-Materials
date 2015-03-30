@@ -1,0 +1,70 @@
+//SCORE page container styles
+
+.score-page {
+	.make-row();
+	&.score-column1 {
+		& > .score-main {
+			.make-md-column(12);
+		}	
+	}
+	&.score-column2-equal {
+		& > .score-side {
+			.make-md-column(6);
+		}
+		& > .score-side2 {
+			.make-md-column(6);
+		}
+	}
+	&.score-column2-largeleft {
+		& > .score-main {
+			.make-md-column(8);
+		}
+		& > .score-side {
+			.make-md-column(4);
+		}
+	}
+	&.score-column2-largeright {
+		& > .score-side {
+			.make-md-column(4);
+		}
+		& > .score-main {
+			.make-md-column(8);
+		}
+	}
+	&.score-column3-equal {
+		& > .score-side {
+			.make-md-column(4);
+		}
+		& > .score-main {
+			.make-md-column(4);
+		}
+		& > .score-side2 {
+			.make-md-column(4);
+		}
+	}
+	&.score-column3-largemiddle {
+		& > .score-side {
+			.make-md-column(3);
+		}
+		& > .score-main {
+			.make-md-column(6);
+		}
+		& > .score-side2 {
+			.make-md-column(3);
+		}
+	}
+	&.score-column4-equal {
+		& > .score-side {
+			.make-md-column(3);
+		}
+		& > .score-main {
+			.make-md-column(3);
+		}
+		& > .score-main2 {
+			.make-md-column(3);
+		}
+		& > .score-side2 {
+			.make-md-column(3);
+		}
+	}
+}
