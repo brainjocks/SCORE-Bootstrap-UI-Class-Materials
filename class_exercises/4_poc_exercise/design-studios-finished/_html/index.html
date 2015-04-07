@@ -29,37 +29,41 @@
 <header>
   <!-- .score-header-wrapper is styled as bootstrap .container in score-local-layout.less -->
   <div class="score-header-wrapper">
-    <div class="score-nav">
-      <nav class="navbar navbar-default score-megamenu">
-        <div class="navbar-header">
-          <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle"><span
-              class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-          <a href="#" class="navbar-brand">
-            <h2>Design Studios</h2>
-          </a>
-        </div>
-        <div id="navbar-collapse-1" class="navbar-collapse collapse">
-          <!-- USE .navbar-right if needed -->
-          <ul class="nav navbar-nav navbar-right">
-            <!-- USE .megamenu-full, .megamenu-medium, .megamenu-small, or just .dropdown -->
-            <li class="score-megamenu-basic-item active">
-              <a href="#">Home</a>
-            </li>
-            <li class="score-megamenu-basic-item">
-              <a href="#">About Us</a>
-            </li>
-            <li class="score-megamenu-basic-item">
-              <a href="#">Services</a>
-            </li>
-            <li class="score-megamenu-basic-item">
-              <a href="#">Portfolio</a>
-            </li>
-            <li class="score-megamenu-basic-item">
-              <a href="#">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <div class="score-nav-wrapper">
+      <div class="score-nav">
+        <nav class="score-mainmenu navbar navbar-default">
+          <div class="navbar-header score-navbar-header">
+            <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+              <h2>Design Studios</h2>
+            </a>
+          </div>
+          <div id="navbar-collapse-1" class="navbar-collapse collapse">
+            <!-- USE .navbar-right if needed -->
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active">
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Services</a>
+              </li>
+              <li>
+                <a href="#">Portfolio</a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
   </div>
 </header>
