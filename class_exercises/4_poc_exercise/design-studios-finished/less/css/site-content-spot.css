@@ -1,0 +1,19 @@
+.score-content-spot h2,
+.score-content-spot h3,
+.score-content-spot h4,
+.score-content-spot h5,
+.score-content-spot h6 {
+  margin: 0 0 10px 0;
+}
+.score-content-spot h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.score-content-spot h4 {
+  font-family: 'Arial';
+  font-size: 20px;
+  color: #888;
+}
+.score-content-spot img {
+  margin-bottom: 10px;
+}
