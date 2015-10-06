@@ -49,7 +49,7 @@ nav {
             @media only screen and (min-width : 0) {
                 clear: both;
             }
-            @media only screen and (min-width : 768px) {
+            @media only screen and (min-width : @grid-float-breakpoint) {
                 clear: none;
             }
             & > a {
@@ -72,7 +72,7 @@ nav {
                             width: initial;
                         }
 
-                        @media only screen and (min-width : 768px) {
+                        @media only screen and (min-width : @grid-float-breakpoint) {
                             width: 320px;
                         }
                     }
@@ -83,7 +83,7 @@ nav {
                             width: initial;
                         }
 
-                        @media only screen and (min-width : 768px) {
+                        @media only screen and (min-width : @grid-float-breakpoint) {
                             width: 640px;
                         }
                     }
@@ -94,7 +94,7 @@ nav {
                             width: initial;
                         }
 
-                        @media only screen and (min-width : 768px) {
+                        @media only screen and (min-width : @grid-float-breakpoint) {
                             width: 960px;
                         }
                     }
@@ -113,7 +113,7 @@ nav {
                             position: inherit;
                         }
 
-                        @media only screen and (min-width : 768px) {
+                        @media only screen and (min-width : @grid-float-breakpoint) {
                             position: absolute;
                         }
                     }
@@ -126,7 +126,7 @@ nav {
                     position: inherit;
                 }
 
-                @media only screen and (min-width : 768px) {
+                @media only screen and (min-width : @grid-float-breakpoint) {
                     position: absolute;
                 }
             }
@@ -147,36 +147,13 @@ nav {
 @nav-pills-active-section-link-hover-bg: lighten(@nav-pills-active-link-hover-bg, 25%);
 
 
-.score-sectionnav, .score-siblingsnav, .score-previous-next-menu {
+.score-section-menu, .score-siblings-menu, .score-previous-next-menu {
     > li {
         &.active-section > a {
             &,
             &:focus {
                 color: @nav-pills-active-section-link-hover-color;
                 background-color: @nav-pills-active-section-link-hover-bg;
-            }
-        }
-    }
-}
-
-.score-sectionnav-multilevel {
-    .nav {
-        > li {
-            // Active state
-            &.active > a {
-                &,
-                &:hover,
-                &:focus {
-                    color: @nav-pills-active-link-hover-color;
-                    background-color: @nav-pills-active-link-hover-bg;
-                }
-            }
-            &.active-section > a {
-                &,
-                &:focus {
-                    color: @nav-pills-active-section-link-hover-color;
-                    background-color: @nav-pills-active-section-link-hover-bg;
-                }
             }
         }
     }

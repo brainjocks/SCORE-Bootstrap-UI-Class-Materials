@@ -24,10 +24,10 @@ RenameMeArea = (function ($) {
 Anonymous function to prepare the page prior to load being complete
 */
 
-$(function () {
+(function () {
     RenameMeArea.prepare();
-});
+})();
 
-$(document).ready(function () {
+jQuery(document).ready(function () {
     RenameMeArea.run();
 });

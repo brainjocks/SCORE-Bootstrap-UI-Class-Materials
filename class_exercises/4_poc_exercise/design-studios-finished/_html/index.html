@@ -27,42 +27,51 @@
 
 <!-- HEADER SECTION -->
 <header>
-  <!-- .score-header-wrapper is styled as bootstrap .container in score-local-layout.less -->
-  <div class="score-header-wrapper">
-    <div class="score-nav-wrapper">
-      <div class="score-nav">
-        <nav class="score-mainmenu navbar navbar-default">
-          <div class="navbar-header score-navbar-header">
-            <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a href="#" class="navbar-brand">
-              <h2>Design Studios</h2>
-            </a>
+  <div class="score-container">
+    <div class="container">
+      <div class="score-page score-column1">
+        <div class="score-main">
+          <div class="score-inner">
+            <div class="score-header-wrapper">
+              <div class="score-nav-wrapper">
+                <div class="score-nav">
+                  <nav class="score-mainmenu navbar navbar-default">
+                    <div class="navbar-header score-navbar-header">
+                      <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a href="#" class="navbar-brand">
+                        <img src="../img/design_studios_logo.png" alt="#">
+                      </a>
+                    </div>
+                    <div id="navbar-collapse-1" class="navbar-collapse collapse">
+                      <!-- USE .navbar-right if needed -->
+                      <ul class="nav navbar-nav navbar-right">
+                        <li class="active">
+                          <a href="#">Home</a>
+                        </li>
+                        <li>
+                          <a href="#">About Us</a>
+                        </li>
+                        <li>
+                          <a href="#">Services</a>
+                        </li>
+                        <li>
+                          <a href="#">Portfolio</a>
+                        </li>
+                        <li>
+                          <a href="#">Contact Us</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
           </div>
-          <div id="navbar-collapse-1" class="navbar-collapse collapse">
-            <!-- USE .navbar-right if needed -->
-            <ul class="nav navbar-nav navbar-right">
-              <li class="active">
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">About Us</a>
-              </li>
-              <li>
-                <a href="#">Services</a>
-              </li>
-              <li>
-                <a href="#">Portfolio</a>
-              </li>
-              <li>
-                <a href="#">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        </div>
       </div>
     </div>
   </div>
@@ -74,10 +83,10 @@
       <div class="score-page score-column1">
         <div class="score-main">
           <div class="score-inner">
-            <div class="score-document-header-with-subtitle page-header score-component">
-              <h1>
-                Clean <span>&amp;</span> Professional Web Design<small>Providing High Quality Web Solutions</small>
-              </h1>
+            <div class="score-component score-content score-content-spot">
+              <h2>
+                Clean <span>&amp;</span> Professional Web Design</h2>
+                <h3>Providing High Quality Web Solutions</h3>
             </div>
           </div>
         </div>
@@ -92,7 +101,7 @@
         <div class="score-page score-column3-equal">
           <div class="score-side">
             <div class="score-inner">
-              <div class="score-highlight thumbnail score-component">
+              <div class="thumbnail score-component score-content score-image score-highlight">
                 <div class="caption">
                   <h2>web design</h2>
                   <div class="score-highlight-body">
@@ -107,7 +116,7 @@
           </div>
           <div class="score-main">
             <div class="score-inner">
-              <div class="score-highlight thumbnail score-component">
+              <div class="thumbnail score-component score-content score-image score-highlight">
                 <div class="caption">
                   <h2>marketing</h2>
                   <div class="score-highlight-body">
@@ -122,7 +131,7 @@
           </div>
           <div class="score-side2">
             <div class="score-inner">
-              <div class="score-highlight thumbnail score-component">
+              <div class="thumbnail score-component score-content score-image score-highlight">
                 <div class="caption">
                   <h2>optimization</h2>
                   <div class="score-highlight-body">
@@ -145,13 +154,15 @@
       <div class="score-page score-column1">
         <div class="score-main">
           <div class="score-inner">
-            <p class="score-lead lead score-component">We provide <strong>first class</strong> web solutions for organizations and small businesses looking to make a <strong>big impact</strong> online. Our services include web design, online marketing campaigns, and search engine optimization.</p>
+            <div class="score-component score-content score-content-spot">
+              <p>We provide <strong>first class</strong> web solutions for organizations and small businesses looking to make a <strong>big impact</strong> online. Our services include web design, online marketing campaigns, and search engine optimization.</p>
+            </div>
 
             <div class="score-structural score-column2-equal">
               <div class="score-left">
                 <div class="score-stylebox">
-                  <div class="score-section-header score-component">
-                    <h3>Client Testimonials</h3>
+                  <div class="score-component score-content score-image score-section-header">
+                    <h2>Client Testimonials</h2>
                   </div>
 
                   <div class="score-highlight quote-list score-component">
@@ -195,9 +206,9 @@
                 </div>
               </div>
               <div class="score-right">
-                <div class="score-section-header score-component">
+                <div class="score-component score-content score-image score-section-header">
                   <h2>Featured Project</h2>
-                  <h4>Yoshi Online Marketing Campaign</h4>
+                  <h3>Yoshi Online Marketing Campaign</h3>
                 </div>
                 <div class="score-highlight call-out score-component">
                   <img class="img-responsive" src="http://placehold.it/600x250">
@@ -223,13 +234,19 @@
 
 <!-- FOOTER SECTION -->
 <footer>
-  <!-- .score-footer-wrapper is styled as bootstrap .container in score-local-layout.less -->
-  <div class="score-footer-wrapper">
-    <div class="score-footer">
-      <div class="score-structural score-column">
-        <div class="score-center">
-          <div class="score-contentspot">
-            Copyright &copy; 2015 ~ Design Studios ~ All Rights Reserved
+  
+  <div class="score-container">
+    <div class="container">
+      <div class="score-page score-column1">
+        <div class="score-main">
+          <div class="score-inner">
+            <div class="score-footer-wrapper">
+              <div class="score-footer">
+                <div class="score-contentspot">
+                  Copyright &copy; 2015 ~ Design Studios ~ All Rights Reserved
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

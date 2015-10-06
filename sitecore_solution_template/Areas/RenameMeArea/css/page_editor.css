@@ -1,0 +1,14 @@
+.scInsertionHandleCenter,
+.sc-breadcrumb .sc-breadcrumb-item-path,
+.sc-breadcrumb-item-path img,
+.scChromeCommand {
+  -webkit-box-sizing: initial;
+  -moz-box-sizing: initial;
+  box-sizing: initial;
+}
+.sc-breadcrumb-item-path img {
+  vertical-align: initial;
+}
+.sc-breadcrumb-item-path span {
+  font-size: 12px;
+}

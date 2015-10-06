@@ -1,23 +1,6 @@
 header {
     background: @site-black;
     margin-bottom: @vertical-spacing;
-
-    //turn into bootstrap container
-    .score-header-wrapper {
-        .container;
-    }
-    h2 {
-        color: @site-white;
-        margin: 0;
-        @media only screen and (min-width : 0) {
-            font-size: 24px;
-            line-height: 50px;
-        }
-        @media only screen and (min-width : 768px) {
-            font-size: 38px;
-            line-height: 100px;
-        }
-    }
 }
 .navbar-default {
     .navbar-brand {
@@ -26,10 +9,12 @@ header {
         padding: 0;
         img {
             @media only screen and (min-width : 0) {
+                width: 160px; 
                 margin-top: 15px;
             }
             @media only screen and (min-width : 768px) {
-                margin-top: 40px;
+                width: 265px;
+                margin-top: 30px;
             }   
         }
     }

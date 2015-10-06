@@ -1,6 +1,6 @@
-var Rename.Me = Rename.Me || {}; 
+var RenameMeArea = RenameMeArea || {}; 
 
-Rename.Me = (function ($) {
+RenameMeArea = (function ($) {
 
     function prepare() {
         /* anything needed to run at script load (not page load) would be declared here */
@@ -24,10 +24,10 @@ Rename.Me = (function ($) {
 Anonymous function to prepare the page prior to load being complete
 */
 
-$(function () {
-    Rename.Me.prepare();
-});
+(function () {
+    RenameMeArea.prepare();
+})();
 
-$(document).ready(function () {
-    Rename.Me.run();
+jQuery(document).ready(function () {
+    RenameMeArea.run();
 });

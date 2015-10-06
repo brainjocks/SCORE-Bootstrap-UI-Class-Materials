@@ -15,7 +15,7 @@
         <link href="@Url.Content("~/Areas/ScoreBootstrapUI/css/bootstrapui_page_editor.css")" rel="stylesheet" />
         <link href="@Url.Content("~/Areas/RenameMeArea/css/page_editor.css")" rel="stylesheet" />
     }
-    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+    <script src="@Url.Content("~/Areas/RenameMeArea/js/modernizr.2.6.2.min.js")"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -38,11 +38,10 @@
     </div>
 
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
-
     @if (!Sitecore.Context.PageMode.IsPageEditorEditing)
     {
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.12.0/jquery.validate.min.js"></script>
+        <script src="@Url.Content("~/Areas/RenameMeArea/js/jquery.2.1.1.min.js")"></script>
+        <script src="@Url.Content("~/Areas/RenameMeArea/js/jquery.validate.1.12.0.min.js")"></script>
         <script src="@Url.Content("~/Areas/RenameMeArea/js/jquery.unobtrusive-ajax.min.js")"></script>
         <script src="@Url.Content("~/Areas/RenameMeArea/js/jquery.validate.unobtrusive.min.js")"></script>
         <script src="@Url.Content("~/Areas/Score/js/score.jquery.validate.unobtrusive.js")"></script>

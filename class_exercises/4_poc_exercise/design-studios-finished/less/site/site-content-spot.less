@@ -2,16 +2,49 @@
 	h2, h3, h4, h5, h6 {
 		margin: 0 0 10px 0;
 	}
-	h3 {
-		font-size: 22px;
-		font-weight: 600;
-	}
-	h4 {
-		font-family: 'Arial';
-		font-size: 20px;
-		color: #888;
-	}
-	img {
-		margin-bottom: 10px;
-	}
+	h2 {
+        font-weight: bold;
+        line-height: 1.2em;
+        text-transform: capitalize;
+        margin: 0;
+        @media only screen and (min-width : 0) {
+            font-size: 36px;
+        }
+        @media only screen and (min-width : 768px) {
+            font-size: 40px;
+        }
+        @media only screen and (min-width : 992px) {
+            font-size: 50px;
+        }
+    }
+    h3 {
+        font-weight: normal;
+        color: #bbb;
+        @media only screen and (min-width : 0) {
+            font-size: 26px;
+        }
+        @media only screen and (min-width : 768px) {
+            font-size: 36px;
+        }
+        @media only screen and (min-width : 992px) {
+            font-size: 40px;
+        }
+    }
+    span {
+        color: @site-blue;
+    }
+    p {
+    	font-family: 'Open Sans';
+		padding-bottom: @vertical-spacing;
+		border-bottom: 2px dotted #ccc;
+		@media only screen and (min-width : 0) {
+	        font-size: 20px;
+	    }
+	    @media only screen and (min-width : 768px) {
+			font-size: 24px;
+	    }
+	    @media only screen and (min-width : 992px) {
+			font-size: 30px;
+    }
+    }
 }
