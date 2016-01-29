@@ -1,0 +1,92 @@
+﻿.score-highlight {
+    @extend .thumbnail; //inherit bootstrap
+    @include vertical-space($vertical-spacing);
+	.score-highlight-header {
+
+	}
+    img {
+
+    }
+    .caption {
+        h2 {
+
+        }
+        .score-highlight-body {
+
+        }
+        .score-call-to-action {
+
+        }
+    }
+    &.option-1 {
+        position: relative;
+        background: rgba(255, 255, 255, 0.95);
+        text-align: center;
+        border: 1px solid #aaa;
+        padding: 20px 20px 60px 20px;
+        .score-highlight-header {           
+            h2 {
+                font-size: 22px;
+                color: rgba(255, 0, 0, 0.6);
+            }
+        }
+        img {
+            width: 150px;
+            height: auto;
+        }
+        .caption {
+            padding: 0;
+            .score-highlight-body {
+                font-size: 18px;
+                color: #808080;
+            }
+            .score-call-to-action {
+                position: absolute;
+                bottom: 20px;
+                left: 0;
+                width: 100%;
+            }
+        }
+        .score-button {
+            font-size: 18px;
+            text-transform: uppercase;
+            margin: 0 20px;
+        }
+    }
+    &.option-2 {
+        background: transparent;
+        text-align: left;
+        border: none;
+        padding: 20px 0;
+        overflow: hidden;
+        .score-highlight-header {
+            h2 {
+                font-size: 22px;
+                margin: 0 0 10px 0;
+            }
+        }
+        img {
+            float: left;
+            width: 20%;
+            margin: 0 5% 20px 0;
+        }
+        .score-highlight-header, .caption {
+            float: left;
+            width: 75%;
+        }
+        .caption {
+            padding: 0;
+            .score-highlight-body {
+
+            }
+            .score-highlight-button-wrapper {
+                position: inherit;
+            }
+        }
+        .score-button {
+            font-size: 14px;
+            text-transform: capitalize;
+            margin: 0;
+        }   
+    }
+}
