@@ -116,6 +116,10 @@ div.btn {
 .score-pe.panel > .panel-body > span {
     padding: 6px;
 }
+.score-alert {
+    display: block;
+    max-width: 99%; //to make room for the 'x' icon
+}
 .btn-group {
     min-width: 200px;
 }
@@ -156,6 +160,13 @@ div.btn {
 }
 .score-button-toolbar > div {
     float: none;
+}
+.score-button {
+    &.btn-primary {
+        a {
+            color: #fff;
+        }
+    }
 }
 .score-location {
     .score-editField {

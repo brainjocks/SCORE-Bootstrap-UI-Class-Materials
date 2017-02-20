@@ -3,7 +3,8 @@
     "underscore",
     "score_ccf/ModuleLoader",
     "scorebootstrap",
-    "matchHeight"
+    "matchHeight",
+    "tabCollapse"
 ],
 function ($, _, moduleLoader, scorebootstrap) {
     "use strict";
@@ -13,8 +14,9 @@ function ($, _, moduleLoader, scorebootstrap) {
         e.stopPropagation();
     });
 
-    // match height style boxes within a container with a special "signal" class
-    $(".matchheight-stylebox .score-style-box").matchHeight(true);
+    //initialize match height
+    $(".score-style-box").matchHeight();
+    $(".score-highlight").matchHeight();
 
     // if you need to monkey patch anything in Score Bootstrap Initialization logic
     // here's where you would do it. Before calling to init(). Something like:
@@ -22,6 +24,9 @@ function ($, _, moduleLoader, scorebootstrap) {
 
     // init SCORE Bootstrap components (Tabsets, Accordeons, Carousels, etc.)
     scorebootstrap.init();
+
+    //turn tabs into accordion
+    $(".nav-tabs").tabCollapse();
 
     moduleLoader.loadPendingModules().done(function() {
         // anything that neeeds to run globally when all modules are loaded goes here

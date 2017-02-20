@@ -39,4 +39,5 @@
 }
 .modal-dialog {
     margin: 250px auto 30px auto;
+    z-index: $zindex-modal;
 }
