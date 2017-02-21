@@ -1,0 +1,30 @@
+.score-tab {
+    @include vertical-space($vertical-spacing);
+    .nav-tabs-wrapper-outer {
+
+    }
+    .nav-tabs-wrapper-inner {
+
+    }
+    .nav-tabs {
+        > li {
+            &.active {
+                a {
+                    color: teal;
+                }
+            }
+        }
+    }
+    .tab-content-wrapper-outer {
+
+    }
+    .tab-content-wrapper-inner {
+
+    }
+    .tab-content {
+
+    }
+    .score-tab-panel {
+        padding-top: $vertical-spacing;
+    }
+}

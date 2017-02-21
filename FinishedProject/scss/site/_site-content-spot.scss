@@ -1,0 +1,5 @@
+.score-content-spot {
+    @include vertical-space($vertical-spacing);
+    font-family: 'Josefin Slab', serif;
+    font-size: 18px;
+}

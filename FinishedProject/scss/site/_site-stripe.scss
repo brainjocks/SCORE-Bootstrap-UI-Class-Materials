@@ -1,0 +1,12 @@
+.score-stripe {
+    &.margin-bottom {
+        @include vertical-space($vertical-spacing);
+    }
+}
+header {
+    + .page-wrapper {
+        .score-stripe:first-child {
+            margin-top: -$vertical-spacing; //offset header margin
+        }
+    }
+}

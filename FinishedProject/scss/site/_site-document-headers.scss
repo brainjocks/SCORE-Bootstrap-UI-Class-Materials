@@ -1,0 +1,61 @@
+.score-document-header {
+    @extend .page-header; //inherit bootstrap
+    @include vertical-space($vertical-spacing);
+    margin-top: 0;
+    padding: 0;
+    border-bottom: none;
+    .score-header-image {
+        img {
+
+        }
+    }
+    h1 {
+        margin: 0;
+    }
+    h2 {
+
+    }
+    &.small-header {
+        h1 {
+            display: inline-block;
+            font-size: 24px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid teal;
+        }
+        h2 {
+            font-size: 20px;
+        }
+    }
+}
+.score-document-header-with-subtitle { //styled same as basic score-document-header
+    @extend .page-header; //inherit bootstrap
+    @include vertical-space($vertical-spacing);
+    margin-top: 0;
+    padding: 0;
+    border-bottom: none;
+    .score-header-image {
+        img {
+
+        }
+    }
+    h1 {
+        margin: 0;
+        small {
+
+        }
+    }
+    h2 {
+
+    }
+    &.small-header {
+        h1 {
+            display: inline-block;
+            font-size: 24px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid teal;
+        }
+        h2 {
+            font-size: 20px;
+        }
+    }
+}

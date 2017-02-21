@@ -1,0 +1,40 @@
+footer {
+    .score-menu-list {
+        @include vertical-space($vertical-spacing);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        @media (max-width: $screen-xs-max) {
+            flex-direction: column;
+            margin: 0 -15px; //edge-to-edge UI for entire list on mobile
+        }
+        li {
+            list-style: none;
+            flex: 1;
+            @media (max-width: $screen-xs-max) {
+                font-size: 16px;
+                margin-bottom: 10px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+    a {
+        color: inherit;
+        &:hover {
+            color: inherit;
+        }
+        @media (max-width: $screen-xs-max) {
+            display: block;
+        }
+    }
+    .score-content-spot {
+        @media (max-width: $screen-xs-max) {
+            font-size: 14px;
+        }
+    }
+}

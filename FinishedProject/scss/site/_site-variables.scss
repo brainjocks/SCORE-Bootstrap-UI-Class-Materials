@@ -1,0 +1,21 @@
+//Global custom variables
+
+//default margin on content components
+$vertical-spacing: 30px;
+
+$site-black: #2b2b2b;
+$site-light-gray: #efefef;
+
+//Global custom mixins
+@mixin vertical-space($margin) {
+	margin-bottom: $margin;
+}
+@mixin animation-transition {
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+@mixin carousel-height {
+	min-height: 300px; //used to match carousel and section hero heights
+}

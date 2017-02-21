@@ -1,0 +1,6 @@
+.score-add-this-widget {
+    @include vertical-space($vertical-spacing);
+    @media (min-width: $screen-sm-min) {
+        float: right;
+    }
+}

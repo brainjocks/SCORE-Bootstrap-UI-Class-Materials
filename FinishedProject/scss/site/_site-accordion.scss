@@ -1,0 +1,31 @@
+.score-accordion {
+    @extend .panel-group; //inherit bootstrap
+    @include vertical-space($vertical-spacing);
+}
+.score-accordion-panel, .panel-default { // .panel-default for tabcollapse plugin
+    @extend .panel; //inherit bootstrap
+    @extend .panel-default; //inherit bootstrap
+    @include vertical-space(5px);
+    .panel-heading {
+        background: transparent; //move background color to <a> tag for open/closed states
+        padding: 0; //move padding to <a> tag
+        .panel-title {
+            a {
+                display: block;
+                color: white;
+                background: teal;
+                padding: 10px 15px;
+                text-decoration: none;
+                &.collapsed {
+                    color: $site-black;
+                    background: $site-light-gray;
+                }
+            }
+        }
+    }
+    .panel-collapse {
+        .panel-body {
+
+        }
+    }
+}
