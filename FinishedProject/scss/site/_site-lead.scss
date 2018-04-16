@@ -1,5 +1,0 @@
-.score-lead {
-    @extend .lead; //inherit bootstrap
-    @include vertical-space($vertical-spacing);
-    font-size: 28px;
-}
